@@ -21,7 +21,7 @@ public class Postazione {
     private String tipo; // PRIVATO, OPENSPACE, SALA RIUNIONI
     private int numeroMaxOccupanti;
 
-    @ManyToOne // Relazione molti-a-uno con l'entità Edificio
+    @ManyToOne //relazione many to one
     @JoinColumn(name = "edificio_id", referencedColumnName = "id")
     private Edificio edificio;
 }
